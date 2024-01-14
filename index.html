@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+
+    <!-- ======================================== NAVIGATION BAR ======================================== -->
+
+    <nav class="navBar">
+        <div><a href="#"><span>GlassM5</span></a></div>
+        <div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <a href="#">Send message</a>
+        </div>
+        <span class="material-symbols-outlined">menu</span>
+    </nav>
+
+    <script>
+        var navBar = document.querySelector(".navBar")
+        var navButton = document.querySelector(".material-symbols-outlined")
+        let navOpen = false;
+
+        navButton.addEventListener('click', () => {
+            if (navOpen === false) {
+                navOpen = true
+                navBar.children[1].style.display = "block"
+                navBar.children[2].style.display = "block"
+            } else if (navOpen === true) {
+                navOpen = false
+                navBar.children[1].style.display = "none"
+                navBar.children[2].style.display = "none"
+            }
+        })
+    </script>
+
+    <!-- ======================================== HERO SECTION ======================================== -->
+
+    <div class="heroSection">
+        <div></div>
+        <div>
+            <p>Photographer</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices risus eget nunc ullamcorper, ut
+                consectetur eros mattis. Praesent lobortis in est sit amet pretium.</p>
+            <a href="#">Read more</a>
+        </div>
+    </div>
+
+    <!-- ======================================== OUR SERVICES ======================================== -->
+
+    <div class="services">
+        <div>
+            <p>Our Services</p>
+            <div>
+                <div>
+                    <span class="material-symbols-outlined">lightbulb</span>
+                    <p>Interior Photography</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu risus eget sapien pellentesque
+                        porttitor nec ut velit.</p>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">account_circle</span>
+                    <p>Portrait Photo</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu risus eget sapien pellentesque
+                        porttitor nec ut velit.</p>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">palette</span>
+                    <p>Art Photo</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu risus eget sapien pellentesque
+                        porttitor nec ut velit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================== ABOUT US ======================================== -->
+
+    <div class="about">
+        <div>
+            <div></div>
+            <div>
+                <p>About us</p>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices risus eget nunc
+                        ullamcorper,
+                        ut consectetur eros mattis. Praesent lobortis in est sit amet pretium. </p>
+                    <p>Fusce ante libero, ultrices sed ullamcorper quis, volutpat in metus. Mauris pulvinar, neque in
+                        porttitor faucibus, tortor enim.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================== PRICING ======================================== -->
+
+    <div class="pricing">
+        <div>
+            <p>OUR PRICING</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <div>
+                <div>
+                    <p>$39</p>
+                    <p>Start</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu risus sapien pellentesque.</p>
+                    <a href="#">Buy Now</a>
+                </div>
+                <div>
+                    <p>$59</p>
+                    <p>Basic</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu risus sapien pellentesque.</p>
+                    <a href="#">Buy Now</a>
+                </div>
+                <div>
+                    <p>$89</p>
+                    <p>Pro</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu risus sapien pellentesque.</p>
+                    <a href="#">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================== WORK ======================================== -->
+
+    <div class="work">
+        <div>
+            <p>OUR WORKS</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div>
+                <div>
+                    <p>Interior Photography</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Portrait Photo</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Art Photo</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================== COMPETANCE ======================================== -->
+
+    <div class="competance">
+        <div>
+            <div>
+                <p>PROGRESS</p>
+                <p>Our Competence</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices risus eget nunc ullamcorper,
+                    ut consectetur eros mattis. Praesent lobortis in est sit amet pretium. Fusce ante libero, ultrices
+                    sed ullamcorper quis, volutpat in metus. Mauris pulvinar, neque in porttitor faucibus.</p>
+                <div>
+                    <div>
+                        <p>Interior Photography</p>
+                        <p>92%</p>
+                    </div>
+                    <div>
+                        <div></div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p>Portrait Photo</p>
+                        <p>71%</p>
+                    </div>
+                    <div>
+                        <div></div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p>Art Photo</p>
+                        <p>53%</p>
+                    </div>
+                    <div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================== FAQs ======================================== -->
+
+    <div class="faqs">
+        <div>
+            <div>
+                <div>
+                    <p>Frequently Asked Questions</p>
+                    <div>
+                        <ul>
+                            <li>
+                                <input type="radio" name="accordian" id="first">
+                                <label for="first">What products do we use?</label>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, libero pariatur.
+                                        Ducimus
+                                        sequi inventore officiis sunt quia, aliquid iusto ea sapiente culpa voluptate
+                                        rerum
+                                        accusantium, illo fugiat dolorum eos repellendus!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="radio" name="accordian" id="second">
+                                <label for="second">What cuisines are presented on the menu?</label>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, libero pariatur.
+                                        Ducimus
+                                        sequi inventore officiis sunt quia, aliquid iusto ea sapiente culpa voluptate
+                                        rerum
+                                        accusantium, illo fugiat dolorum eos repellendus!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="radio" name="accordian" id="third">
+                                <label for="third">What types of payment do we accept?</label>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, libero pariatur.
+                                        Ducimus
+                                        sequi inventore officiis sunt quia, aliquid iusto ea sapiente culpa voluptate
+                                        rerum
+                                        accusantium, illo fugiat dolorum eos repellendus!</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================== CLIENTS ======================================== -->
+
+    <div class="clients">
+        <div>
+            <p>OUR CLIENTS</p>
+            <p>We love to work with our clients</p>
+            <div>
+                <div><img src="./assests/images/1.png" alt="Clients"></div>
+                <div><img src="./assests/images/2.png" alt="Clients"></div>
+                <div><img src="./assests/images/3.png" alt="Clients"></div>
+                <div><img src="./assests/images/4.png" alt="Clients"></div>
+                <div><img src="./assests/images/5.png" alt="Clients"></div>
+                <div><img src="./assests/images/1.png" alt="Clients"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================== SAYHELLO ======================================== -->
+
+    <div class="sayHello">
+        <div>
+            <p>HAVE A NEW PROJECT IN MIND?</p>
+            <p>Say Hello</p>
+            <a href="#">hello@yoursite.com</a>
+        </div>
+    </div>
+
+    <!-- ======================================== TESTIMONIAL ======================================== -->
+
+    <div class="testimonial">
+        <div>
+            <div></div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam orci nisl, rhoncus viverra fringilla in,
+                    luctus vitae elit.</p>
+                <p>Gabriel Moreira</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================== CONTACT ======================================== -->
+
+    <div class="contact">
+        <div>
+            <p>Contact Us</p>
+            <form action="#">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" id="name" placeholder="Name">
+                        </td>
+                        <td>
+                            <input type="text" id="email" placeholder="Email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="subject" placeholder="Subject">
+                        </td>
+                        <td>
+                            <input type="text" id="phone" placeholder="Phone">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit">Send your message</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <!-- ======================================== FOOTER ======================================== -->
+
+    <div class="footer">
+        <div>
+            <div>
+                <p>About Us</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices risus eget nunc ullamcorper,
+                    ut consectetur eros mattis. Convallis fringilla arcu consequat condimentum lectus.</p>
+            </div>
+            <div>
+                <div>
+                    <p>Company</p>
+                    <p><a href="#">About</a></p>
+                    <p><a href="#">Jobs</a></p>
+                    <p><a href="#">Contacts</a></p>
+                    <p><a href="#">Blogs</a></p>
+                </div>
+                <div>
+                    <p>Themes</p>
+                    <p><a href="#">Features</a></p>
+                    <p><a href="#">Team</a></p>
+                    <p><a href="#">Pricing</a></p>
+                    <p><a href="#">Info</a></p>
+                </div>
+                <div>
+                    <p>Support</p>
+                    <p><a href="#">Contact</a></p>
+                    <p><a href="#">Testimonials</a></p>
+                    <p><a href="#">Terms of Services</a></p>
+                    <p><a href="#">Help</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
